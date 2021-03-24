@@ -1,12 +1,18 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using CalculadoraTesteAutomatizado;
+using System.Diagnostics;
+using OpenQA.Selenium.Appium.Windows;
+using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Appium;
 
 namespace CalculadoraTeste
 {
     [TestClass]
     public class TestarOperacoesMatematicas
     {
+
+
         [TestMethod]
         [DataRow(10, 20)]
         public void RetornaValorSoma(double num1, double num2)
